@@ -1,20 +1,19 @@
 tasks = []
 
-
 def addTask():
   task = input("Enter Task Here!: ")
   tasks.append(task)
-  print(f"Task '{task}' added to the list.")
+  print(f"✅ Task '{task}' added to the list.") #Code Change Emojis invite a visual appeal/warmth towards the app, also adjusted input
 
 
 def listTasks():
   if not tasks:
-    print("You currently have no tasks! <3")
-  else:
-    print("Current Tasks:")
-    for index, task in enumerate(tasks):
-      print(f"Task #{index}. {task}")
-
+    print("✨ You currently have no tasks! 🎉") #Code change Emojis invite a visual appeal/warmth towards the app,also adjusted input
+else:
+        print("\n📝 Current Tasks:") 
+        for index, task in enumerate(tasks):
+            print(f"  {index + 1}. {task}")  # Code Change:Number Adjustment
+        print("\n")
 
 def deleteTask():
   listTasks()
